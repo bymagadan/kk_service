@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пополнение мобильного оператора</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Пополнение мобильного оператора</h1>
+        
+        <div class="operators">
+            <img src="Megafon.webp" alt="Megafon" class="operator" data-operator="Megafon">
+            <img src="MTS.webp" alt="MTS" class="operator" data-operator="MTS">
+            <img src="Beeline.webp" alt="Beeline" class="operator" data-operator="Beeline">
+            <img src="Tele2.webp" alt="Tele2" class="operator" data-operator="Tele2">
+            <img src="Yota.webp" alt="Yota" class="operator" data-operator="Yota">
+        </div>
+
+        <input type="hidden" id="selected-operator">
+
+        <label>Номер телефона:</label>
+        <input type="text" id="phone-number" placeholder="+7 (___) ___-__-__">
+
+        <label>Сумма в рублях:</label>
+        <input type="number" id="amount-rub" placeholder="Введите сумму">
+
+        <label>Сумма в USDT:</label>
+        <input type="text" id="amount-usdt" readonly>
+
+        <button id="next-button">Продолжить</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
